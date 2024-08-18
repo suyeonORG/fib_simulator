@@ -10,7 +10,7 @@ This Node.js utility is designed to generate a Forwarding Information Base (FIB)
 
 ## Requirements
 
-- **Node.js**: Ensure that you have Node.js installed on your system. You can download and install it from the official [Node.js website](https://nodejs.org/).
+- **Node.js**: Ensure you have Node.js installed on your system. You can download and install it from the official [Node.js website](https://nodejs.org/).
 
 ## Installation
 
@@ -45,9 +45,9 @@ node main.js -sub 51.91.152.0 -mask 255.255.248.0 -r 2 -n 4 512 354 208 137
 ```
 
 This command specifies:
-- A base network IP of `192.168.0.0` with a mask of `255.255.255.0`.
+- A base network IP of `51.91.152.0` with a mask of `255.255.248.0`.
 - `2` routers in the network.
-- `3` departments, with `512`, `354`, `208` and `137` hosts respectively.
+- `4` departments, with `512`, `354`, `208` and `137` hosts respectively.
 
 ### Output
 
@@ -103,7 +103,7 @@ Router 1
 
 ## Error Handling
 
-The utility includes error handling to ensure that subnet calculations and FIB generation are performed correctly. If an error occurs, a descriptive message will be printed to the console.
+The utility includes error handling to ensure that subnet calculations and FIB generation are performed correctly. In case an error occurs, a descriptive message will be printed to the console.
 
 ## Contribution
 
